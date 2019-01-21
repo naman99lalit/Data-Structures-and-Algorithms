@@ -11,6 +11,8 @@ These are some of the data structures and algorithms that i have used in my prog
 
 1.Bubble Sort
 
+2.Selection Sort
+
 ## STL in C++
 
 1.Sorting a Vector
