@@ -13,6 +13,8 @@ These are some of the data structures and algorithms that i have used in my prog
 
 2.Selection Sort
 
+3.Insertion sort
+
 ## STL in C++
 
 1.Sorting a Vector
