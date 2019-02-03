@@ -13,7 +13,9 @@ These are some of the data structures and algorithms that i have used in my prog
 
 2.Selection Sort
 
-3.Insertion sort
+3.Insertion Sort
+
+4.Merge Sort
 
 ## STL in C++
 
