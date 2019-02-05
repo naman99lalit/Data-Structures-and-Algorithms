@@ -21,7 +21,7 @@ int countnodes(struct Node** head)
 }
 struct Node* getnode(int roll,char name[])
 {
-	struct Node* p=(struct Node*)malloc(sizeof(struct Node));
+	struct Node* p=new Node;
 	p->rollno=roll;
 	strcpy(p->name,name);
 	return p;
