@@ -26,3 +26,6 @@ These are some of the data structures and algorithms that i have used in my prog
 1.Creating a Linked List
 
 2.Insertion in a Linked List
+
+3.Deletion from a Linked List
+
