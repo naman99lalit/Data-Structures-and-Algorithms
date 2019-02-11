@@ -15,13 +15,13 @@ int main()
 	for(i=0;i<n;i++)
 	{
 		int temp;
-		for(j=i+1;j<n;j++)
+		for(j=0;j<n-1-i;j++)
 		{
-			if(a[j]<a[i])
+			if(a[j+1]<a[j])
 			{
-				temp=a[i];
-				a[i]=a[j];
-				a[j]=temp;
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
 				count++;
 				flag=1;
 			}
