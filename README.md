@@ -17,6 +17,8 @@ These are some of the data structures and algorithms that i have used in my prog
 
 4.Merge Sort
 
+5.Quick Sort
+
 ## STL in C++
 
 1.Sorting a Vector
