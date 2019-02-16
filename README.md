@@ -33,3 +33,7 @@ These are some of the data structures and algorithms that i have used in my prog
 
 4.Searching an element in the list
 
+5.Doubly Linked List ( insertion and deletion)
+
+6.Infix to Postfix conversion
+
