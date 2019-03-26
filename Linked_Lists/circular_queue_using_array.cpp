@@ -42,6 +42,7 @@ class circular_queue
             if(front==-1)
             {
                 cout<<"Queue is empty\n";
+                return;
             }
             int delete_value=cir_array[front];
             cir_array[front]=-1;
@@ -64,6 +65,7 @@ class circular_queue
             if(front==-1)
             {
                 cout<<"Queue is empty\n";
+                return ;
             }
             else if(rear<front)
             {
