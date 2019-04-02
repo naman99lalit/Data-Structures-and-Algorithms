@@ -37,3 +37,15 @@ These are some of the data structures and algorithms that i have used in my prog
 
 6.Infix to Postfix conversion
 
+7.Stack using Array
+
+8.Circular Queue using array
+
+9.Stack using Queue
+
+## Binary Search Tree
+
+1.Insertion and Searching
+
+2.Deletion
+
