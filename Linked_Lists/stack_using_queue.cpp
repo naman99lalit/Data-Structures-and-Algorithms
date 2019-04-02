@@ -42,6 +42,7 @@ int main()
 				cout<<disp1.front()<<" ";
 				disp1.pop();
 			}
+			cout<<endl;
 		}
 		else break;
 	}

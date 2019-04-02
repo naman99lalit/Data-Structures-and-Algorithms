@@ -6,7 +6,6 @@ struct node
 	int key;
 	struct node *left, *right;
 };
-struct node* temp2=NULL;
 struct node* newnode(int item)
 {
 	struct node *temp = new node;
@@ -29,6 +28,52 @@ struct node* insertnode(struct node *node, int item)
 		node->left=insertnode(node->left,item);
 	}
 	return node;
+}
+struct node* minvalue(struct node* node)
+{
+	struct node* minv= node;
+	while(minv->left!=NULL)
+	{
+		minv=(minv->left);
+	}
+	return minv;
+}
+struct node* deletenode(struct node *node,int item)
+{
+	 if(node==NULL)
+	 {
+	 	return node;
+	 }
+	 if(item>(node->key))
+	 {
+	 	node->right=deletenode(node->right,item);
+	 }
+	 else if(item<(node->key))
+	 {
+	 	node->left=deletenode(node->left,item);
+	 }
+	 else
+	 {
+	 	if(node->right==NULL)
+	 	{
+	 		struct node* temp;
+	 		temp= node->left;
+	 		free(node);
+	 		return temp;
+		}
+		else if(node->left==NULL)
+		{
+			struct node* temp;
+			temp=node->right;
+			free(node);
+			return temp;
+		}
+		struct node* temp;
+		temp= minvalue(node->right);
+		node->key=temp->key;
+		node->right=deletenode(node->right,temp->key);
+	 }
+	 return node;
 }
 int search(struct node* node,int item)
 {
@@ -69,7 +114,7 @@ int main()
 	root = insertnode(root,value);
 	while(1)
 	{
-		cout<<"Press 1 to insert a value in the Binary Search Tree\n"<<"Press 2 to check the inorder traversal of the tree\n"<<"Press 3 to search a value in the tree\n"<<"Press 4 to exit\n";
+		cout<<"Press 1 to insert a value in the Binary Search Tree\n"<<"Press 2 to check the inorder traversal of the tree\n"<<"Press 3 to search a value in the tree\n"<<"Press 4 to delete a value from the BST\n"<<"Press 5 to exit\n";
 		cin>>ch;
 		if(ch=='1')
 		{
@@ -94,6 +139,13 @@ int main()
 		    }
 			else
 			cout<<"Not Present\n";
+		}
+		else if(ch=='4')
+		{
+			int value4;
+			cout<<"Enter the value that you want to delete\n";
+			cin>>value4;
+			root = deletenode(root,value4);
 		}
 		else
 		{
