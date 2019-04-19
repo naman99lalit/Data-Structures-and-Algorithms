@@ -1,5 +1,5 @@
 # Data-Structures-and-Algorithms
-These are some of the data structures and algorithms that i have used in my programming.
+These are some of the Data Structures and Algorithms Programs that I have used in my Course.
 
 ## Searching Alogrithms:
 
@@ -42,6 +42,8 @@ These are some of the data structures and algorithms that i have used in my prog
 8.Circular Queue using array
 
 9.Stack using Queue
+
+10.Implementation of 2 Stacks using an array
 
 ## Binary Search Tree
 
