@@ -21,7 +21,13 @@ These are some of the Data Structures and Algorithms Programs that I have used i
 
 ## STL in C++
 
-1.Sorting a Vector
+1. Vector
+
+2. Set
+
+3. Map
+
+4. Stack
 
 ## Linked Lists
 
